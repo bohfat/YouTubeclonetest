@@ -1,0 +1,186 @@
+body {
+    margin-top: 65px;
+}
+
+.container-header {
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0px 40px 0px 16px;
+    /*border-bottom: 1px solid lightgray;*/
+    z-index: 100;
+}
+
+.header-left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    width: 45%;
+}
+
+.header-center-input-search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+
+.header-center input {
+
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    outline: 0;
+    width: 100%;
+}
+
+.header-center-button-search {
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 20px;
+    border-radius: 0px 20px 20px 0px;
+    position: relative;
+    cursor: pointer;
+}
+.header-center-button-search:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.search-relative {
+    position: absolute;
+    color: #fff;
+    background-color: #6c6c6c;
+    padding: 5px;
+    left: 0px;
+    bottom: -40px;
+    font-size: 17px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.header-center-button-search:hover .search-relative {
+    opacity: 1;
+}
+
+.header-center-search-logo {
+    height: 50%;
+}
+
+.header-center-microphone-button {
+    background-color: #fff;
+    outline: 0;
+    border: 0;
+    position: relative;
+}
+
+.mic-relative {
+    position: absolute;
+    color: #fff;
+    background-color: #6c6c6c;
+    padding: 5px;
+    left: -5px;
+    bottom: -50px;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+.header-center-microphone-button:hover .mic-relative {
+    opacity: 1;
+}
+
+
+.header-center-microphone-logo {
+    width: 17px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-center-microphone-logo:hover {
+    border-radius: 50%;
+    background-color: #d5d5d5;
+}
+.header-left-section button {
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+}
+
+.menu-symbol {
+    height: 24px;
+    width: 24px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.menu-symbol:hover {
+    border-radius: 50%;
+    background-color: #d5d5d5;
+}
+
+.header-left-section-youtube-logo {
+    height: 50px;
+    width: 90px;
+}
+
+/*right section*/
+.header-right-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.header-right-section button {
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+}
+.header-right-buttons-img {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.header-profile-photo {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 36px;
+    height: 36px;
+}
+
+@media (max-width: 750px) {
+    .header-center-input-search-container {
+        justify-content: right;
+    }
+    .header-center input {
+        display: none;
+    }
+    .header-center-button-search {
+        border-radius: 20px;
+        background-color: #fff;
+        border: none;
+    }
+}
