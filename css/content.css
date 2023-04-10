@@ -65,7 +65,14 @@
 .video-stats {
     color: rgba(96, 96, 96, 1);
 }
-@media (max-width: 850px) {
+
+@media (max-width: 700px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 850px) {
     .content-grid {
         grid-template-columns: 1fr 1fr;
     }
