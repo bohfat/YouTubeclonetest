@@ -1,11 +1,13 @@
 body {
     margin-left: 240px;
 }
+
 .sidebar-container {
     min-height: 100vh;
     top: 56px;
     left: 0;
-    bottom: 0;overflow-y: scroll;
+    bottom: 0;
+    overflow-y: scroll;
     position: fixed;
     width: 240px;
     height: 50px;
@@ -24,6 +26,7 @@ body {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 10px;
 }
+
 .link-main {
     display: inline-block;
     width: 100%;
@@ -34,6 +37,7 @@ body {
     text-decoration: none;
     color: initial;
 }
+
 .sidebar-button-main {
     display: flex;
     flex-direction: row;
@@ -47,16 +51,20 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .sidebar-button-main img {
     height: 20px;
     width: 20px;
 }
+
 .text-main {
     font-size: 13px;
 }
+
 .sidebar-button-main:hover {
     background-color: #d5d5d5;
 }
+
 .sidebar-button-main:active, .link-main:active {
     background-color: #c2c2c2;
     border-radius: 10px;
@@ -67,10 +75,12 @@ body {
     body {
         margin-left: 62px;
     }
+
     .sidebar-container {
         width: 62px;
         opacity: 1;
     }
+
     .text-main {
         opacity: 0;
     }

@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 56px;
-    padding: 0px 40px 0px 16px;
+    padding: 0 40px 0 16px;
     /*border-bottom: 1px solid lightgray;*/
     z-index: 100;
 }
@@ -57,20 +57,22 @@ body {
     height: 40px;
     background-color: rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0px 20px;
-    border-radius: 0px 20px 20px 0px;
+    padding: x 20px;
+    border-radius: 0 20px 20px 0;
     position: relative;
     cursor: pointer;
 }
+
 .header-center-button-search:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 .search-relative {
     position: absolute;
     color: #fff;
     background-color: #6c6c6c;
     padding: 5px;
-    left: 0px;
+    left: 0;
     bottom: -40px;
     font-size: 17px;
     border-radius: 5px;
@@ -78,6 +80,7 @@ body {
     pointer-events: none;
     transition: opacity 0.15s;
 }
+
 .header-center-button-search:hover .search-relative {
     opacity: 1;
 }
@@ -122,6 +125,7 @@ body {
     border-radius: 50%;
     background-color: #d5d5d5;
 }
+
 .header-left-section button {
     background-color: #fff;
     border: 0;
@@ -153,17 +157,29 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .header-right-section button {
     outline: 0;
     border: 0;
-    background-color: #fff;
+    padding: 8px;
 }
+
+.header-right-section button:hover {
+    border-radius: 50%;
+    background-color: #d5d5d5;
+}
+
 .header-right-buttons-img {
-    height: 18px;
-    width: 18px;
+    width: 17px;
     cursor: pointer;
     object-fit: cover;
 }
+
+.header-right-buttons-img:hover {
+    border-radius: 50%;
+    background-color: #d5d5d5;
+}
+
 .header-profile-photo {
     border-radius: 50%;
     object-fit: cover;
@@ -175,15 +191,19 @@ body {
     .header-right-section-mess-add {
         display: none;
     }
+
     .header-center-microphone-button {
         display: none;
     }
+
     .header-center-input-search-container {
         justify-content: right;
     }
+
     .header-center input {
         display: none;
     }
+
     .header-center-button-search {
         border-radius: 20px;
         background-color: #fff;
